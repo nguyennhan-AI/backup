@@ -12,6 +12,7 @@ const UploadForm = () => {
     };
   
     return (
+      <div>
       <Form form={form} layout="vertical" className='upload-form'>
         <Form.Item label={<span className="upload-video-label">Upload Video</span>} name="video">
           <Upload
@@ -22,23 +23,13 @@ const UploadForm = () => {
             <Button icon={<UploadOutlined />}>Click to Upload Video</Button>
           </Upload>
         </Form.Item>
-  
-        <Form.Item label={<span className="upload-image-label">Upload Image</span>} name="image">
-          <Upload
-            name="image"
-            action="/upload/image"
-            onChange={handleUpload}
-          >
-            <Button icon={<UploadOutlined />}>Click to Upload Image</Button>
-          </Upload>
-        </Form.Item>
-  
         <Form.Item>
-          <Button type="primary" htmlType="submit" className="submitButton" >
+          <Button type="primary" htmlType="submit" className="submitButton"   >
             Submit
           </Button>
         </Form.Item>
       </Form>
+      </div>
     );
   };
   

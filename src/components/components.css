@@ -1,19 +1,19 @@
 .upload-video-label {
     font-size: 20px; 
-    font-family: Poppins, sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: white;
     font-style: italic;
 }
 .upload-image-label {
     font-size: 20px; 
-    font-family: Poppins, sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: white;
     font-style: italic;
 }
 .upload-form{
     position: absolute;
     margin-left: 90px;
-    top : 30px;
+    top:30px;
 }
 .submitButton{
     background-color:black;

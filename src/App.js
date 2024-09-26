@@ -1,8 +1,8 @@
 import React from 'react';
 import './project.css';
 import BreadCrumb from './components/BreadCrumb';
-import UploadForm from './components/UploadForm';
 import UserSwitch from './components/UserSwitch';
+import CameraButton from './components/CameraButton.js';
 
 function App() {
   return (
@@ -18,15 +18,13 @@ function App() {
       <div className="switch">
         <UserSwitch></UserSwitch>
       </div>
-      <div className="wrapper">
-      <UploadForm></UploadForm>
+      <div className="wrapper"> 
+      <div className="camera-submit">
+        <h2 className="camera-text">Record your camera video</h2>
+        <CameraButton></CameraButton>
+      </div>
       </div>
       <div className="response">REPONSE</div>
-
-
-
-
-
     </div>
 
   );

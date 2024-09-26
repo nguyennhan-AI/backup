@@ -31,7 +31,7 @@ header{
     font-style: italic;
     font-family: 'Georgia', serif;
     color: #fff;
-    padding-left: 20px;
+    padding-left: 170px;
 }
 .logo img{
     width: 30px;
@@ -59,15 +59,17 @@ header{
 }
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     background:linear-gradient(rgba(0,0,0,0.5),rgb(8, 7, 81),rgb(52, 14, 52));
     background-size: cover;
+    overflow: hidden;
 }
-bar{
+.bar{
     display: flex;
-    justify-content: center;
+    justify-content: space-between; 
     align-items: center;
     width: 250px;
 }
@@ -93,4 +95,14 @@ bar{
     top: 120px; 
     font-size: smaller;
 }
-
+.camera-submit{
+    margin-left: 85px;
+    position: absolute;
+    top :50px;
+}
+.camera-text{
+    font-size: 20px; 
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-style: italic;
+}
